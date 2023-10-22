@@ -1,15 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Map4VCU | Transit Options around VCU</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Map 4 VCU | Transit Options around VCU</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="./main.scss" />
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="./main.js"></script>
 </head>
+
 <body>
-  
+  <div class="container">
+    <!-- Drop down component -->
+    <!-- <div class="dropdown">
+      <div class="dropdown-title">
+        <h2>Scooters Around VCU</h2>
+        <span class="material-symbols-outlined collapsed">expand_more</span>
+      </div>
+      <div class="content collapsed">
+        
+      </div>
+    </div> -->
+
+    <div class="dropdown">
+      <div class="dropdown-title">
+        <h2>Scooters Around VCU</h2>
+        <span class="material-symbols-outlined">expand_more</span>
+      </div>
+      <div class="content">
+        <div class="scooters">
+            <div class="scootercard">
+              <div class="imgwrap">
+                <img src="./assets/image 6.png" alt="Lime Scooter">
+              </div>
+              <div class="scooterdetails">
+                <div class="scooter-name-price">
+                  <h3>Lime Scooter</h3>
+                  <p>$1 to start, then $0.38/min + tax</p>
+                </div>
+                <div class="downloadlinks">
+                  <a href="">
+                    <img src="./assets/App Store.png" alt="App Store">
+                    <span>App Store</span>
+                  </a>
+                  <a href="">
+                    <img src="./assets/Google Play.png" alt="Google Play">
+                    <span>Play Store</span>
+                  </a>
+                </div>
+                <div class="available-passes">
+                  <p>Available Passes:</p>
+                  <div class="pass">
+                    <div class="pass-name-price">
+                      <p>60-Min Pass</p>
+                      <p>$11.99</p>
+                    </div>
+                    <ul class="pass-details">
+                      <li>
+                        <p>Use within 3 days</p>
+                      </li>
+                      <li>
+                        <p>Unlimited Unlocks</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pass">
+                    <div class="pass-name-price">
+                      <p>100-Min Pass</p>
+                      <p>$18.99</p>
+                    </div>
+                    <ul class="pass-details">
+                      <li>
+                        <p>Use within 5 days</p>
+                      </li>
+                      <li>
+                        <p>Unlimited Unlocks</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pass">
+                    <div class="pass-name-price">
+                      <p>240-Min Pass</p>
+                      <p>$44.99</p>
+                    </div>
+                    <ul class="pass-details">
+                      <li>
+                        <p>Use within 7 days</p>
+                      </li>
+                      <li>
+                        <p>Unlimited Unlocks</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scootercard">
+              <div class="imgwrap">
+                <img src="./assets/image 6.png" alt="Lime Scooter">
+              </div>
+              <div class="scooterdetails">
+                <div class="scooter-name-price">
+                  <h3>Lime Scooter</h3>
+                  <p>$1 to start, then $0.38/min + tax</p>
+                </div>
+                <div class="downloadlinks">
+                  <a href="">
+                    <img src="./assets/App Store.png" alt="App Store">
+                    <span>App Store</span>
+                  </a>
+                  <a href="">
+                    <img src="./assets/Google Play.png" alt="Google Play">
+                    <span>Play Store</span>
+                  </a>
+                </div>
+                <div class="available-passes">
+                  <p>Available Passes:</p>
+                  <div class="pass">
+                    <div class="pass-name-price">
+                      <p>60-Min Pass</p>
+                      <p>$11.99</p>
+                    </div>
+                    <ul class="pass-details">
+                      <li>
+                        <p>Use within 3 days</p>
+                      </li>
+                      <li>
+                        <p>Unlimited Unlocks</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pass">
+                    <div class="pass-name-price">
+                      <p>100-Min Pass</p>
+                      <p>$18.99</p>
+                    </div>
+                    <ul class="pass-details">
+                      <li>
+                        <p>Use within 5 days</p>
+                      </li>
+                      <li>
+                        <p>Unlimited Unlocks</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pass">
+                    <div class="pass-name-price">
+                      <p>240-Min Pass</p>
+                      <p>$44.99</p>
+                    </div>
+                    <ul class="pass-details">
+                      <li>
+                        <p>Use within 7 days</p>
+                      </li>
+                      <li>
+                        <p>Unlimited Unlocks</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scootercard">
+              <div class="imgwrap">
+                <img src="./assets/image 6.png" alt="Lime Scooter">
+              </div>
+              <div class="scooterdetails">
+                <div class="scooter-name-price">
+                  <h3>Lime Scooter</h3>
+                  <p>$1 to start, then $0.38/min + tax</p>
+                </div>
+                <div class="downloadlinks">
+                  <a href="">
+                    <img src="./assets/App Store.png" alt="App Store">
+                    <span>App Store</span>
+                  </a>
+                  <a href="">
+                    <img src="./assets/Google Play.png" alt="Google Play">
+                    <span>Play Store</span>
+                  </a>
+                </div>
+                <div class="available-passes">
+                  <p>Available Passes:</p>
+                  <div class="pass">
+                    <div class="pass-name-price">
+                      <p>60-Min Pass</p>
+                      <p>$11.99</p>
+                    </div>
+                    <ul class="pass-details">
+                      <li>
+                        <p>Use within 3 days</p>
+                      </li>
+                      <li>
+                        <p>Unlimited Unlocks</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pass">
+                    <div class="pass-name-price">
+                      <p>100-Min Pass</p>
+                      <p>$18.99</p>
+                    </div>
+                    <ul class="pass-details">
+                      <li>
+                        <p>Use within 5 days</p>
+                      </li>
+                      <li>
+                        <p>Unlimited Unlocks</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pass">
+                    <div class="pass-name-price">
+                      <p>240-Min Pass</p>
+                      <p>$44.99</p>
+                    </div>
+                    <ul class="pass-details">
+                      <li>
+                        <p>Use within 7 days</p>
+                      </li>
+                      <li>
+                        <p>Unlimited Unlocks</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>

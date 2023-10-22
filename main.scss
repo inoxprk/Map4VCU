@@ -1,3 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Roboto:wght@400;500;700&display=swap');
+
+// Color system
+$black: #333333 !default;
+$gray: #717171 !default;
+$yellow: #FBAA2A !default;
+$lightyellow: #FFE1AB !default;
+$lighteryellow: #fff7e8 !default;
+
 body {
-  background-color: red;
+  background-color: $lightyellow;
+}
+
+h1,
+h2,
+h3,
+span {
+  font-family: 'Capriola', sans-serif;
+
+  color: $black;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 32px 16px;
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $black;
+    box-shadow: $black 8px 8px 0 0;
+    background-color: $yellow;
+    border-radius: 8px;
+    max-height: 95vh;
+    transition: height .3s linear;
+    margin-bottom: 16px;
+    overflow: hidden;
+
+
+    .dropdown-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-bottom: 2px solid $black;
+
+      h2 {
+        padding-left: 8px;
+      }
+
+      span {
+        display: inline-block;
+        font-size: 40px;
+        transition: transform 0.2s ease;
+        transform: rotate(180deg);
+      }
+
+      &.collapsed {
+        border-bottom: none;
+
+        span {
+          transform: rotate(0);
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      transition: height .2s ease-in-out;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding: 16px;
+      background-color: $lighteryellow;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      &.collapsed {
+        height: 0;
+        padding: 0;
+        // >* {
+        //   display: none;
+        // }
+      }
+
+      .scooters {
+        height: 100%;
+
+
+        .scootercard {
+          display: flex;
+          flex-direction: column;
+          border: 2px solid $black;
+          background-color: $lightyellow;
+          border-radius: 8px;
+          overflow: hidden;
+
+          p {
+            color: $gray;
+            font-weight: 700;
+          }
+
+          .imgwrap {
+            width: 100%;
+            border-bottom: 2px solid $black;
+            padding: 0;
+
+            img {
+              display: block;
+              width: 100%;
+            }
+          }
+
+          >div {
+            padding: 8px;
+          }
+
+          .scooterdetails {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+
+            .scooter-name-price {
+              margin-bottom: 4px;
+
+              h3 {
+                font-size: 32px;
+                margin-bottom: 8px;
+              }
+            }
+
+            .downloadlinks {
+              display: flex;
+              gap: 8px;
+              align-self: stretch;
+
+              a {
+                display: flex;
+                width: 100%;
+                padding: 4px 8px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                text-decoration: none;
+                border-radius: 8px;
+                border: 2px solid $black;
+                background: $yellow;
+
+                img {
+                  width: 24px;
+                }
+
+                span {
+                  color: #333;
+                  text-align: center;
+                  font-family: Capriola;
+                  font-size: 12px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+              }
+            }
+
+            .available-passes {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              align-self: stretch;
+
+              .pass {
+                display: flex;
+                padding: 8px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                align-self: stretch;
+                border-radius: 8px;
+                border: 2px solid $black;
+                background-color: $lighteryellow;
+
+                .pass-name-price {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  align-self: stretch;
+
+                  p {
+                    color: $black;
+                  }
+                }
+
+                ul.pass-details {
+                  li {
+                    margin-bottom: 4px;
+
+                    p {
+                      color: $black;
+                      font-weight: 400;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

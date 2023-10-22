@@ -1,5 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Capriola&family=Roboto:wght@400;500;700&display=swap");
 body {
-  background-color: red;
+  background-color: #FFE1AB;
+}
+
+h1,
+h2,
+h3,
+span {
+  font-family: "Capriola", sans-serif;
+  color: #333333;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 32px 16px;
+}
+.container .dropdown {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #333333;
+  box-shadow: #333333 8px 8px 0 0;
+  background-color: #FBAA2A;
+  border-radius: 8px;
+  max-height: 95vh;
+  transition: height 0.3s linear;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.container .dropdown .dropdown-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-bottom: 2px solid #333333;
+}
+.container .dropdown .dropdown-title h2 {
+  padding-left: 8px;
+}
+.container .dropdown .dropdown-title span {
+  display: inline-block;
+  font-size: 40px;
+  transition: transform 0.2s ease;
+  transform: rotate(180deg);
+}
+.container .dropdown .dropdown-title.collapsed {
+  border-bottom: none;
+}
+.container .dropdown .dropdown-title.collapsed span {
+  transform: rotate(0);
+}
+.container .dropdown .content {
+  display: flex;
+  transition: height 0.2s ease-in-out;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 16px;
+  background-color: #fff7e8;
+}
+.container .dropdown .content::-webkit-scrollbar {
+  display: none;
+}
+.container .dropdown .content.collapsed {
+  height: 0;
+  padding: 0;
+}
+.container .dropdown .content .scooters {
+  height: 100%;
+}
+.container .dropdown .content .scooters .scootercard {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #333333;
+  background-color: #FFE1AB;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.container .dropdown .content .scooters .scootercard p {
+  color: #717171;
+  font-weight: 700;
+}
+.container .dropdown .content .scooters .scootercard .imgwrap {
+  width: 100%;
+  border-bottom: 2px solid #333333;
+  padding: 0;
+}
+.container .dropdown .content .scooters .scootercard .imgwrap img {
+  display: block;
+  width: 100%;
+}
+.container .dropdown .content .scooters .scootercard > div {
+  padding: 8px;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .scooter-name-price {
+  margin-bottom: 4px;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .scooter-name-price h3 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .downloadlinks {
+  display: flex;
+  gap: 8px;
+  align-self: stretch;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .downloadlinks a {
+  display: flex;
+  width: 100%;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  background: #FBAA2A;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .downloadlinks a img {
+  width: 24px;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .downloadlinks a span {
+  color: #333;
+  text-align: center;
+  font-family: Capriola;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .available-passes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: stretch;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .available-passes .pass {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  background-color: #fff7e8;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .available-passes .pass .pass-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .available-passes .pass .pass-name-price p {
+  color: #333333;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .available-passes .pass ul.pass-details li {
+  margin-bottom: 4px;
+}
+.container .dropdown .content .scooters .scootercard .scooterdetails .available-passes .pass ul.pass-details li p {
+  color: #333333;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */
