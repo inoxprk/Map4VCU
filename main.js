@@ -13,6 +13,21 @@ new Swiper('.scooters .swiper-container', {
   }
 });
 
+new Swiper('.grtc .swiper-container', {
+  autoplay: false, 
+  loop: true,
+  centeredSlides: true,
+  spaceBetween: 20,
+  pagination: {
+    el: ".grtc .swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.grtc .swiper-prev',
+    nextEl: '.grtc .swiper-next'
+  }
+});
+
 $(document).ready(function() {
   $('.dropdown-title').click(function() {
       // Find the parent '.dropdown' of the clicked '.dropdown-title'

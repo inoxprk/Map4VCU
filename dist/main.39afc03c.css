@@ -61,22 +61,22 @@ p {
   padding: 0 16px 0;
   background-color: #fff7e8;
 }
-.container .dropdown .content:has(> .scooters) {
+.container .dropdown .content:has(> .scooters, .grtc) {
   padding: 0;
 }
-.container .dropdown .content .scooters {
+.container .dropdown .content .scooters, .container .dropdown .content .grtc {
   width: 100%;
   position: relative;
 }
-.container .dropdown .content .scooters .swiper-container {
+.container .dropdown .content .scooters .swiper-container, .container .dropdown .content .grtc .swiper-container {
   height: 100%;
   overflow: hidden;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide {
   padding: 16px;
   box-sizing: border-box;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard {
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -89,15 +89,15 @@ p {
   margin-top: 40px;
   height: calc(100% - 90px);
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard::-webkit-scrollbar {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard::-webkit-scrollbar, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard::-webkit-scrollbar {
   display: none;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard p {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard p, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard p {
   color: #717171;
   font-weight: 700;
   line-height: 18px;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap {
   width: 100%;
   box-sizing: border-box;
   padding-top: 65%;
@@ -107,37 +107,43 @@ p {
   background-attachment: fixed;
   background-position: center;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.lime {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.lime, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.lime {
   background-image: url("/lime.a3cfa09a.png");
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.spin {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.spin, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.spin {
   background-image: url("/spin.ffca3d1e.png");
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.bird {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.bird, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.bird {
   background-image: url("/bird.1841be2c.png");
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard > div {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.grtcimg, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.grtcimg {
+  background-image: url("/grtc.a3d1e16e.jpeg");
+}
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.pulseimg, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap.pulseimg {
+  background-image: url("/pulse.2cbe3fa7.jpeg");
+}
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard > div, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard > div {
   padding: 8px;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .scooter-name-price {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .scooter-name-price, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .scooter-name-price {
   margin-bottom: 4px;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .scooter-name-price h3 {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .scooter-name-price h3, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .scooter-name-price h3 {
   font-size: 32px;
   margin-bottom: 8px;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks {
   display: flex;
   gap: 8px;
   align-self: stretch;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks a {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks a, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks a {
   display: flex;
   width: 100%;
   padding: 4px 8px;
@@ -149,10 +155,10 @@ p {
   border: 2px solid #333333;
   background: #FBAA2A;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks a img {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks a img, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks a img {
   width: 24px;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks a span {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks a span, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .downloadlinks a span {
   color: #333;
   text-align: center;
   font-family: Capriola;
@@ -161,13 +167,13 @@ p {
   font-weight: 400;
   line-height: normal;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes {
   display: flex;
   flex-direction: column;
   gap: 8px;
   align-self: stretch;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass {
   display: flex;
   padding: 8px;
   flex-direction: column;
@@ -178,29 +184,44 @@ p {
   border: 2px solid #333333;
   background-color: #fff7e8;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass .pass-name-price {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass:has(iframe), .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass:has(iframe) {
+  padding: 0;
+  overflow: hidden;
+  padding-top: 66%;
+  position: relative;
+}
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass iframe, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass .pass-name-price, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass .pass-name-price {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   align-self: stretch;
+  gap: 48px;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass .pass-name-price p {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass .pass-name-price p, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass .pass-name-price p {
   color: #333333;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details {
   list-style: url("/check_circle_FILL0_wght400_GRAD0_opsz24.451b3933.svg");
   margin-left: 32px;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details li {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details li, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details li {
   padding: 0;
   margin-bottom: 4px;
 }
-.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details li p {
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details li p, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details li p {
   transform: translateY(-6px);
   color: #333333;
   font-weight: 400;
 }
-.container .dropdown .content .scooters .swiper-pagination {
+.container .dropdown .content .scooters .swiper-pagination, .container .dropdown .content .grtc .swiper-pagination {
   position: absolute;
   top: 20px;
   left: 0;
@@ -211,7 +232,7 @@ p {
   padding: 0 16px;
   gap: 8px;
 }
-.container .dropdown .content .scooters .swiper-pagination .swiper-pagination-bullet {
+.container .dropdown .content .scooters .swiper-pagination .swiper-pagination-bullet, .container .dropdown .content .grtc .swiper-pagination .swiper-pagination-bullet {
   padding: 4px 8px;
   width: 100%;
   height: auto;
@@ -220,20 +241,27 @@ p {
   border-radius: 8px;
   opacity: 1;
 }
-.container .dropdown .content .scooters .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.container .dropdown .content .scooters .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active, .container .dropdown .content .grtc .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #FBAA2A;
 }
-.container .dropdown .content .scooters .swiper-pagination .swiper-pagination-bullet:nth-of-type(1)::after {
+.container .dropdown .content .scooters .swiper-pagination.scooter .swiper-pagination-bullet:nth-of-type(1)::after, .container .dropdown .content .grtc .swiper-pagination.scooter .swiper-pagination-bullet:nth-of-type(1)::after {
   content: "Lime";
 }
-.container .dropdown .content .scooters .swiper-pagination .swiper-pagination-bullet:nth-of-type(2)::after {
+.container .dropdown .content .scooters .swiper-pagination.scooter .swiper-pagination-bullet:nth-of-type(2)::after, .container .dropdown .content .grtc .swiper-pagination.scooter .swiper-pagination-bullet:nth-of-type(2)::after {
   content: "Spin";
 }
-.container .dropdown .content .scooters .swiper-pagination .swiper-pagination-bullet:nth-of-type(3)::after {
+.container .dropdown .content .scooters .swiper-pagination.scooter .swiper-pagination-bullet:nth-of-type(3)::after, .container .dropdown .content .grtc .swiper-pagination.scooter .swiper-pagination-bullet:nth-of-type(3)::after {
   content: "Bird";
 }
+.container .dropdown .content .scooters .swiper-pagination.grtcbus .swiper-pagination-bullet:nth-of-type(1)::after, .container .dropdown .content .grtc .swiper-pagination.grtcbus .swiper-pagination-bullet:nth-of-type(1)::after {
+  content: "GRTC";
+}
+.container .dropdown .content .scooters .swiper-pagination.grtcbus .swiper-pagination-bullet:nth-of-type(2)::after, .container .dropdown .content .grtc .swiper-pagination.grtcbus .swiper-pagination-bullet:nth-of-type(2)::after {
+  content: "Pulse";
+}
 .container .dropdown .content .scooters .swiper-prev,
-.container .dropdown .content .scooters .swiper-next {
+.container .dropdown .content .scooters .swiper-next, .container .dropdown .content .grtc .swiper-prev,
+.container .dropdown .content .grtc .swiper-next {
   z-index: 1;
   position: absolute;
   width: 48px;
@@ -245,14 +273,15 @@ p {
   cursor: pointer;
 }
 .container .dropdown .content .scooters .swiper-prev span,
-.container .dropdown .content .scooters .swiper-next span {
+.container .dropdown .content .scooters .swiper-next span, .container .dropdown .content .grtc .swiper-prev span,
+.container .dropdown .content .grtc .swiper-next span {
   text-align: center;
   font-size: 48px;
 }
-.container .dropdown .content .scooters .swiper-prev {
+.container .dropdown .content .scooters .swiper-prev, .container .dropdown .content .grtc .swiper-prev {
   transform: translateX(-40px);
 }
-.container .dropdown .content .scooters .swiper-next {
+.container .dropdown .content .scooters .swiper-next, .container .dropdown .content .grtc .swiper-next {
   transform: translateX(40px);
 }
 .container .dropdown .content .defaultoptions {

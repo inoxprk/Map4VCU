@@ -78,11 +78,11 @@ p {
       background-color: $lighteryellow;
 
 
-      &:has(>.scooters) {
+      &:has(>.scooters,.grtc) {
         padding: 0;
       }
 
-      .scooters {
+      .scooters, .grtc {
         width: 100%;
         position: relative;
 
@@ -139,6 +139,14 @@ p {
 
                   &.bird {
                     background-image: url('./assets/bird.png');
+                  }
+
+                  &.grtcimg {
+                    background-image: url('./assets/grtc.jpeg');
+                  }
+                  
+                  &.pulseimg {
+                    background-image: url('./assets/pulse.jpeg');
                   }
                 }
 
@@ -211,11 +219,27 @@ p {
                       border: 2px solid $black;
                       background-color: $lighteryellow;
 
+                      &:has(iframe) {
+                        padding: 0;
+                        overflow: hidden;
+                        padding-top: 66%;
+                        position: relative;
+                      }
+                      iframe {
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        bottom:0;
+                        right:0;
+                        width: 100%;
+                        height: 100%;
+                      }
+
                       .pass-name-price {
                         display: flex;
                         justify-content: space-between;
-                        align-items: center;
                         align-self: stretch;
+                        gap:48px;
 
                         p {
                           color: $black;
@@ -268,17 +292,33 @@ p {
             &.swiper-pagination-bullet-active {
               background-color: $yellow;
             }
+          }
 
-            &:nth-of-type(1)::after {
-              content: "Lime";
+          &.scooter {
+            .swiper-pagination-bullet {
+              &:nth-of-type(1)::after {
+                content: "Lime";
+              }
+  
+              &:nth-of-type(2)::after {
+                content: "Spin";
+              }
+  
+              &:nth-of-type(3)::after {
+                content: "Bird";
+              }
             }
+          }
 
-            &:nth-of-type(2)::after {
-              content: "Spin";
-            }
-
-            &:nth-of-type(3)::after {
-              content: "Bird";
+          &.grtcbus {
+            .swiper-pagination-bullet {
+              &:nth-of-type(1)::after {
+                content: "GRTC";
+              }
+  
+              &:nth-of-type(2)::after {
+                content: "Pulse";
+              }
             }
           }
         }

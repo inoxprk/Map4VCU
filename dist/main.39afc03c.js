@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./assets/lime.png":[["lime.a3cfa09a.png","assets/lime.png"],"assets/lime.png"],"./assets/spin.png":[["spin.ffca3d1e.png","assets/spin.png"],"assets/spin.png"],"./assets/bird.png":[["bird.1841be2c.png","assets/bird.png"],"assets/bird.png"],"./assets/check_circle_FILL0_wght400_GRAD0_opsz24.svg":[["check_circle_FILL0_wght400_GRAD0_opsz24.451b3933.svg","assets/check_circle_FILL0_wght400_GRAD0_opsz24.svg"],"assets/check_circle_FILL0_wght400_GRAD0_opsz24.svg"],"./assets/ramsafe.png":[["ramsafe.fbd4896c.png","assets/ramsafe.png"],"assets/ramsafe.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./assets/lime.png":[["lime.a3cfa09a.png","assets/lime.png"],"assets/lime.png"],"./assets/spin.png":[["spin.ffca3d1e.png","assets/spin.png"],"assets/spin.png"],"./assets/bird.png":[["bird.1841be2c.png","assets/bird.png"],"assets/bird.png"],"./assets/grtc.jpeg":[["grtc.a3d1e16e.jpeg","assets/grtc.jpeg"],"assets/grtc.jpeg"],"./assets/pulse.jpeg":[["pulse.2cbe3fa7.jpeg","assets/pulse.jpeg"],"assets/pulse.jpeg"],"./assets/check_circle_FILL0_wght400_GRAD0_opsz24.svg":[["check_circle_FILL0_wght400_GRAD0_opsz24.451b3933.svg","assets/check_circle_FILL0_wght400_GRAD0_opsz24.svg"],"assets/check_circle_FILL0_wght400_GRAD0_opsz24.svg"],"./assets/ramsafe.png":[["ramsafe.fbd4896c.png","assets/ramsafe.png"],"assets/ramsafe.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53892" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49690" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
