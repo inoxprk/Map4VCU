@@ -58,7 +58,7 @@ p {
 .container .dropdown .content {
   display: flex;
   overflow: hidden;
-  padding: 16px;
+  padding: 0 16px 0;
   background-color: #fff7e8;
 }
 .container .dropdown .content:has(> .scooters) {
@@ -78,6 +78,7 @@ p {
 }
 .container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard {
   width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   border: 2px solid #333333;
@@ -98,6 +99,7 @@ p {
 }
 .container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .imgwrap {
   width: 100%;
+  box-sizing: border-box;
   padding-top: 65%;
   border-bottom: 2px solid #333333;
   background-repeat: no-repeat;
@@ -185,10 +187,16 @@ p {
 .container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass .pass-name-price p {
   color: #333333;
 }
+.container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details {
+  list-style: url("/check_circle_FILL0_wght400_GRAD0_opsz24.451b3933.svg");
+  margin-left: 32px;
+}
 .container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details li {
+  padding: 0;
   margin-bottom: 4px;
 }
 .container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass ul.pass-details li p {
+  transform: translateY(-6px);
   color: #333333;
   font-weight: 400;
 }
@@ -224,7 +232,8 @@ p {
 .container .dropdown .content .scooters .swiper-pagination .swiper-pagination-bullet:nth-of-type(3)::after {
   content: "Bird";
 }
-.container .dropdown .content .scooters .swiper-prev, .container .dropdown .content .scooters .swiper-next {
+.container .dropdown .content .scooters .swiper-prev,
+.container .dropdown .content .scooters .swiper-next {
   z-index: 1;
   position: absolute;
   width: 48px;
@@ -235,7 +244,8 @@ p {
   margin: 0 auto;
   cursor: pointer;
 }
-.container .dropdown .content .scooters .swiper-prev span, .container .dropdown .content .scooters .swiper-next span {
+.container .dropdown .content .scooters .swiper-prev span,
+.container .dropdown .content .scooters .swiper-next span {
   text-align: center;
   font-size: 48px;
 }
@@ -244,6 +254,132 @@ p {
 }
 .container .dropdown .content .scooters .swiper-next {
   transform: translateX(40px);
+}
+.container .dropdown .content .defaultoptions {
+  padding: 16px 0 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.container .dropdown .content .defaultoptions::-webkit-scrollbar {
+  display: none;
+}
+.container .dropdown .content .defaultoptions p {
+  color: #717171;
+  font-weight: 700;
+  line-height: 18px;
+}
+.container .dropdown .content .defaultoptions .imgwrap {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 65%;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container .dropdown .content .defaultoptions .imgwrap.ramsafe {
+  background-image: url("/ramsafe.fbd4896c.png");
+}
+.container .dropdown .content .defaultoptions .transitdetails {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.container .dropdown .content .defaultoptions .transitdetails .transit-name-details {
+  margin-bottom: 4px;
+}
+.container .dropdown .content .defaultoptions .transitdetails .transit-name-details h3 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.container .dropdown .content .defaultoptions .transitdetails .downloadlinks {
+  display: flex;
+  gap: 8px;
+  align-self: stretch;
+}
+.container .dropdown .content .defaultoptions .transitdetails .downloadlinks a {
+  display: flex;
+  width: 100%;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  background: #FBAA2A;
+}
+.container .dropdown .content .defaultoptions .transitdetails .downloadlinks a img {
+  width: 24px;
+}
+.container .dropdown .content .defaultoptions .transitdetails .downloadlinks a span {
+  color: #333;
+  text-align: center;
+  font-family: Capriola;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.container .dropdown .content .defaultoptions .transitdetails .subcard-category {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: stretch;
+}
+.container .dropdown .content .defaultoptions .transitdetails .subcard-category .subcard {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 2px solid #333333;
+  background-color: #fff7e8;
+}
+.container .dropdown .content .defaultoptions .transitdetails .subcard-category .subcard:has(iframe) {
+  padding: 0;
+  overflow: hidden;
+  padding-top: 66%;
+  position: relative;
+}
+.container .dropdown .content .defaultoptions .transitdetails .subcard-category .subcard iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.container .dropdown .content .defaultoptions .transitdetails .subcard-category .subcard .subcard-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.container .dropdown .content .defaultoptions .transitdetails .subcard-category .subcard .subcard-title p {
+  color: #333333;
+}
+.container .dropdown .content .defaultoptions .transitdetails .subcard-category .subcard ul.subcard-details {
+  list-style: url("/check_circle_FILL0_wght400_GRAD0_opsz24.451b3933.svg");
+  margin-left: 32px;
+}
+.container .dropdown .content .defaultoptions .transitdetails .subcard-category .subcard ul.subcard-details li {
+  padding: 0;
+  margin-bottom: 4px;
+}
+.container .dropdown .content .defaultoptions .transitdetails .subcard-category .subcard ul.subcard-details li p {
+  transform: translateY(-6px);
+  color: #333333;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */
