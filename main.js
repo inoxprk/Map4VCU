@@ -28,6 +28,21 @@ new Swiper('.grtc .swiper-container', {
   }
 });
 
+new Swiper('.carpool .swiper-container', {
+  autoplay: false, 
+  loop: true,
+  centeredSlides: true,
+  spaceBetween: 20,
+  pagination: {
+    el: ".carpool .swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.carpool .swiper-prev',
+    nextEl: '.carpool .swiper-next'
+  }
+});
+
 $(document).ready(function() {
   $('.dropdown-title').click(function() {
       // Find the parent '.dropdown' of the clicked '.dropdown-title'
