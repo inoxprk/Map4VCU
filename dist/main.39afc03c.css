@@ -20,6 +20,24 @@ p {
   max-width: 600px;
   padding: 32px 16px;
 }
+.container .header {
+  margin: 16px 0;
+}
+.container .header a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+}
+.container .header a span {
+  margin-top: 2px;
+  font-size: 32px;
+}
+.container .header a h1 {
+  margin: 8px 0;
+  font-size: 20px;
+  text-align: center;
+}
 .container .dropdown {
   display: flex;
   flex-direction: column;
