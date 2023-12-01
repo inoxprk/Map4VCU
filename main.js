@@ -74,7 +74,7 @@ $(document).ready(function () {
     $(this).closest('.content').find('.swiper-wrapper').height(activeSlideHeight + 24);
   });
 
-  $('.swiper-wrapper').on('mouseup', function () {
+  $('.swiper-wrapper').on('mouseup pointerup', function () {
     let activeSlideHeight = $(this).closest('.content').find('.swiper-slide-active').height();
     console.log(activeSlideHeight);
 
