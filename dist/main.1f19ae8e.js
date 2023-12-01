@@ -191,6 +191,14 @@ $(document).ready(function () {
     console.log(activeSlideHeight);
     $(this).closest('.content').find('.swiper-wrapper').height(activeSlideHeight + 24);
   });
+  $('.swiper-wrapper').on('pointerup', function () {
+    var _this = this;
+    setTimeout(function () {
+      var activeSlideHeight = $(_this).closest('.content').find('.swiper-slide-active').height();
+      console.log(activeSlideHeight);
+      $(_this).closest('.content').find('.swiper-wrapper').height(activeSlideHeight + 24);
+    }, 100);
+  });
 });
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -217,7 +225,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58487" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49792" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
