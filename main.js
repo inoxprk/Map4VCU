@@ -1,5 +1,5 @@
 new Swiper('.scooters .swiper-container', {
-  autoplay: false, 
+  autoplay: false,
   loop: true,
   centeredSlides: true,
   spaceBetween: 20,
@@ -14,7 +14,7 @@ new Swiper('.scooters .swiper-container', {
 });
 
 new Swiper('.grtc .swiper-container', {
-  autoplay: false, 
+  autoplay: false,
   loop: true,
   centeredSlides: true,
   spaceBetween: 20,
@@ -29,7 +29,7 @@ new Swiper('.grtc .swiper-container', {
 });
 
 new Swiper('.carpool .swiper-container', {
-  autoplay: false, 
+  autoplay: false,
   loop: true,
   centeredSlides: true,
   spaceBetween: 20,
@@ -43,16 +43,15 @@ new Swiper('.carpool .swiper-container', {
   }
 });
 
-$(document).ready(function() {
-  $('.dropdown-title').click(function() {
-      // Find the parent '.dropdown' of the clicked '.dropdown-title'
-      // let content = $(this).next('.content');
-      let content = $(this).closest('.dropdown');
-      
-      // Toggle the 'dropdown-toggle' class on the found '.dropdown'
-      content.toggleClass('collapsed');
-      $(this).toggleClass('collapsed');
+// JQuery
+$(document).ready(function () {
+  $('.dropdown-title').click(function () {
+    // Find the parent '.dropdown' of the clicked '.dropdown-title'
+    // let content = $(this).next('.content');
+    let content = $(this).closest('.dropdown');
+
+    // Toggle the 'dropdown-toggle' class on the found '.dropdown'
+    content.toggleClass('collapsed');
+    $(this).toggleClass('collapsed');
   });
 });
-
-

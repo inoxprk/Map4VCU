@@ -55,7 +55,7 @@ p {
     box-shadow: $black 8px 8px 0 0;
     background-color: $yellow;
     border-radius: 8px;
-    max-height: 90vh;
+    max-height: 200vh;
     transition: max-height .3s ease-in-out;
     margin-bottom: 16px;
     overflow: hidden;
@@ -92,10 +92,15 @@ p {
 
     .content {
       display: flex;
+      flex-direction: column;
       overflow: hidden;
       padding: 0 16px 0;
       background-color: $lighteryellow;
 
+      .pagination-name {
+        padding: 16px 20px 0 ;  
+        font-weight: bold;
+      }
 
       &:has(>.scooters,.grtc,.carpool) {
         padding: 0;
@@ -106,27 +111,25 @@ p {
         position: relative;
 
         .swiper-container {
-          height: 100%;
-          overflow: hidden;
 
           .swiper-wrapper {
             .swiper-slide {
-              padding: 16px;
+              padding: 8px 16px 16px;
               box-sizing: border-box;
+              height: fit-content;
+              // overflow: hidden;
 
               .scootercard {
                 width: 100%;
+                // height: 100%;
                 box-sizing: border-box;
                 display: flex;
                 flex-direction: column;
                 border: 2px solid $black;
                 background-color: $lightyellow;
                 border-radius: 8px;
-                overflow-x: hidden;
-                overflow-y: scroll;
+                overflow: hidden;
                 margin-top: 40px;
-                height: calc(100% - 90px);
-
 
                 &::-webkit-scrollbar {
                   display: none;
@@ -142,6 +145,7 @@ p {
                   width: 100%;
                   box-sizing: border-box;
                   padding-top: 65%;
+                  
                   border-bottom: 2px solid $black;
                   background-repeat: no-repeat;
                   background-size: cover;
@@ -334,7 +338,7 @@ p {
 
         .swiper-pagination {
           position: absolute;
-          top: 20px;
+          top: 12px;
           left: 0;
           right: 0;
           margin: 0 auto;
@@ -402,15 +406,18 @@ p {
 
         .swiper-prev,
         .swiper-next {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           z-index: 1;
           position: absolute;
-          width: 48px;
-          height: 48px;
-          left: 0;
-          right: 0;
-          bottom: 8px;
-          margin: 0 auto;
+          width: 38px;
+          height: 38px;
+          top: 0;
+          margin-top: 60%;
           cursor: pointer;
+          background-color: $lighteryellow;
+          border-radius: 100%;
 
           span {
             text-align: center;
@@ -419,11 +426,13 @@ p {
         }
 
         .swiper-prev {
-          transform: translateX(-40px);
+          left:24px;
+          // transform: translateX(-40px);
         }
 
         .swiper-next {
-          transform: translateX(40px);
+          right:24px;
+          // transform: translateX(40px);
         }
       }
 

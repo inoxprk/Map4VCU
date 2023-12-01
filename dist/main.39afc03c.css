@@ -45,7 +45,7 @@ p {
   box-shadow: #333333 8px 8px 0 0;
   background-color: #FBAA2A;
   border-radius: 8px;
-  max-height: 90vh;
+  max-height: 200vh;
   transition: max-height 0.3s ease-in-out;
   margin-bottom: 16px;
   overflow: hidden;
@@ -75,9 +75,14 @@ p {
 }
 .container .dropdown .content {
   display: flex;
+  flex-direction: column;
   overflow: hidden;
   padding: 0 16px 0;
   background-color: #fff7e8;
+}
+.container .dropdown .content .pagination-name {
+  padding: 16px 20px 0;
+  font-weight: bold;
 }
 .container .dropdown .content:has(> .scooters, .grtc, .carpool) {
   padding: 0;
@@ -86,13 +91,10 @@ p {
   width: 100%;
   position: relative;
 }
-.container .dropdown .content .scooters .swiper-container, .container .dropdown .content .grtc .swiper-container, .container .dropdown .content .carpool .swiper-container {
-  height: 100%;
-  overflow: hidden;
-}
 .container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide, .container .dropdown .content .carpool .swiper-container .swiper-wrapper .swiper-slide {
-  padding: 16px;
+  padding: 8px 16px 16px;
   box-sizing: border-box;
+  height: fit-content;
 }
 .container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard, .container .dropdown .content .carpool .swiper-container .swiper-wrapper .swiper-slide .scootercard {
   width: 100%;
@@ -102,10 +104,8 @@ p {
   border: 2px solid #333333;
   background-color: #FFE1AB;
   border-radius: 8px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
   margin-top: 40px;
-  height: calc(100% - 90px);
 }
 .container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard::-webkit-scrollbar, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard::-webkit-scrollbar, .container .dropdown .content .carpool .swiper-container .swiper-wrapper .swiper-slide .scootercard::-webkit-scrollbar {
   display: none;
@@ -279,7 +279,7 @@ p {
 }
 .container .dropdown .content .scooters .swiper-pagination, .container .dropdown .content .grtc .swiper-pagination, .container .dropdown .content .carpool .swiper-pagination {
   position: absolute;
-  top: 20px;
+  top: 12px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -329,15 +329,18 @@ p {
 .container .dropdown .content .scooters .swiper-next, .container .dropdown .content .grtc .swiper-prev,
 .container .dropdown .content .grtc .swiper-next, .container .dropdown .content .carpool .swiper-prev,
 .container .dropdown .content .carpool .swiper-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   position: absolute;
-  width: 48px;
-  height: 48px;
-  left: 0;
-  right: 0;
-  bottom: 8px;
-  margin: 0 auto;
+  width: 38px;
+  height: 38px;
+  top: 0;
+  margin-top: 60%;
   cursor: pointer;
+  background-color: #fff7e8;
+  border-radius: 100%;
 }
 .container .dropdown .content .scooters .swiper-prev span,
 .container .dropdown .content .scooters .swiper-next span, .container .dropdown .content .grtc .swiper-prev span,
@@ -347,10 +350,10 @@ p {
   font-size: 48px;
 }
 .container .dropdown .content .scooters .swiper-prev, .container .dropdown .content .grtc .swiper-prev, .container .dropdown .content .carpool .swiper-prev {
-  transform: translateX(-40px);
+  left: 24px;
 }
 .container .dropdown .content .scooters .swiper-next, .container .dropdown .content .grtc .swiper-next, .container .dropdown .content .carpool .swiper-next {
-  transform: translateX(40px);
+  right: 24px;
 }
 .container .dropdown .content .defaultoptions {
   padding: 16px 0 16px;
