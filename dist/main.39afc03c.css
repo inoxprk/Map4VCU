@@ -213,7 +213,7 @@ p {
 .container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass:has(iframe), .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass:has(iframe), .container .dropdown .content .carpool .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass:has(iframe) {
   padding: 0;
   overflow: hidden;
-  padding-top: 66%;
+  padding-top: 100%;
   position: relative;
 }
 .container .dropdown .content .scooters .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass iframe, .container .dropdown .content .grtc .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass iframe, .container .dropdown .content .carpool .swiper-container .swiper-wrapper .swiper-slide .scootercard .scooterdetails .available-passes .pass iframe {
@@ -450,7 +450,7 @@ p {
 .container .dropdown .content .defaultoptions .transitdetails .subcard-category .subcard:has(iframe) {
   padding: 0;
   overflow: hidden;
-  padding-top: 66%;
+  padding-top: 100%;
   position: relative;
 }
 .container .dropdown .content .defaultoptions .transitdetails .subcard-category .subcard iframe {

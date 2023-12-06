@@ -255,7 +255,7 @@ p {
                       &:has(iframe) {
                         padding: 0;
                         overflow: hidden;
-                        padding-top: 66%;
+                        padding-top: 100%;
                         position: relative;
                       }
                       iframe {
@@ -544,7 +544,7 @@ p {
               &:has(iframe) {
                 padding: 0;
                 overflow: hidden;
-                padding-top: 66%;
+                padding-top: 100%;
                 position: relative;
               }
               iframe {

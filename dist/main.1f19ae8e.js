@@ -205,7 +205,7 @@ $(document).ready(function () {
 var today = new Date();
 
 // Set the target date (12/29/2021)
-var targetDate = new Date('2024-02-29');
+var targetDate = new Date('2024-03-01');
 
 // Compare today's date with the target date
 if (today > targetDate) {
@@ -248,7 +248,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53379" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54572" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
