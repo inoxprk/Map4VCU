@@ -93,25 +93,25 @@ $(document).ready(function () {
   
 });
 
-// Get today's date
-var today = new Date();
+// // Get today's date
+// var today = new Date();
 
-// Set the target date (12/29/2021)
-var targetDate = new Date('2024-03-01');
+// // Set the target date (12/29/2021)
+// var targetDate = new Date('2024-03-01');
 
-// Compare today's date with the target date
-if (today > targetDate) {
-  // If today's date is later than 12/29/2021
+// // Compare today's date with the target date
+// if (today > targetDate) {
+//   // If today's date is later than 12/29/2021
 
-  // Get all elements with class 'dropdown'
-  var dropdownElements = document.querySelectorAll('.dropdown');
+//   // Get all elements with class 'dropdown'
+//   var dropdownElements = document.querySelectorAll('.dropdown');
 
-  // Check if there is at least one element
-  if (dropdownElements.length > 0) {
-    // Get the first element
-    var firstDropdown = dropdownElements[0];
+//   // Check if there is at least one element
+//   if (dropdownElements.length > 0) {
+//     // Get the first element
+//     var firstDropdown = dropdownElements[0];
 
-    // Remove the first element
-    firstDropdown.parentNode.removeChild(firstDropdown);
-  }
-}
+//     // Remove the first element
+//     firstDropdown.parentNode.removeChild(firstDropdown);
+//   }
+// }
